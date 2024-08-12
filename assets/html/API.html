@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+
+     <!-- bootstrap-css--link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- local-css-link -->
+    <link rel="stylesheet" href="/assets/css/API.css">
+</head>
+<body>
+
+<!-- =================================================================== -->
+     <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success" width: 100%;>
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./html-form.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/css-learning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/flexbox.html" target="_blank">css-flexbox</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/flex-project.html" target="_blank">flex-project</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/css-position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/API.html" target="_blank">API</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/node.html" target="_blank">Node</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/react.html" target="_blank">React</a>
+                  </li>
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+           
+            <!-- start-page-title -->
+            <h1 style="background-color: burlywood; padding: 8px;">API-page</h1>
+            <br>
+            <!-- end-page-title -->
+<!-- =================================================================== -->
+<!-- syntax -->
+<div class="syntax">
+  <h5>syntax:</h5>
+
+  <!-- callback syntax -->
+  <h6><strong>callback function:</strong>
+    <br>function firstFunc(Func){
+      <br>Func();
+      <br>}
+      <br><br>function secondFunc(){
+      <br> console.log("this is callback function ");
+      <br>}
+      <br><br>firstFunc(secondFunc); <br></h6>----------
+
+  <!-- promise syntax -->
+      <h6><strong>promise:</strong>
+        <br><strong>const welcome = new Promise(function (resolve, reject) </strong>{
+          <br>setTimeout(() => {
+            <br> var a="v"
+            <br>var b="b"
+           <br> <br>if (a==b) { 
+            <br><strong>resolve();</strong>   
+            <br>}else{
+            <br> <strong>reject();</strong>
+            <br><br>} 
+           
+            <br>}, 4000);
+            <br>});
+      
+            <br> <br><strong>welcome.then(function () </strong>{
+            <br>console.log("call resolve (correct!)");
+            <br>});
+    
+            <br> <br> <strong>welcome.catch(function ()</strong> {
+            <br>console.log("call reject (error!)");
+            <br>});
+      </h6>----------
+
+  <!-- fetch syntax -->
+      <h6><strong>fetch:</strong>
+      
+       <br><strong>fetch(URL)</strong>
+
+       <br><strong> <br>.then(function(response) {
+          <br>return response.json();
+       <br> })  </strong>
+       
+      <br><strong><br>.then(function(data) {
+        <br>console.log(data);
+        <br>( we should write the code here)
+        <br>})</strong>
+        
+       <br><strong> <br>.catch(function (error) {
+          <br>console.log( `errrrorrr! ${error}`);   
+          <br>})</strong>
+      </h6>----------
+
+</div>
+
+<div class="Asynchronous">
+<!-- Synchronous: -->
+  <h5>-Synchronous: <br><strong>meaning:</strong> start now, use it at the same time.</h5>
+  <h6>-in java script codes(statement) executes line by line and that means code is Synchronous. <br><br>
+    <strong>-description: <br>statements:</strong> In JavaScript, statements are instructions that are executed by the browser or Node. js <br>ex: variables, functions, if, loop, console.log()
+  </h6>---------
+<!-- -Asynchronous: -->
+  <h5>-Asynchronous: <br><strong>meaning:</strong> start now, use it when it finished.</h5>
+  
+  <h6>-in java script some codes(statement) need mor time to finish(ex:3 second) and then execute, that means code is Asynchronous. <br><br>-so if we want to execute a code without wasting the time to execute we need to use Asynchronous function.  <br><br><strong>ex: setTimeout(function, time)</strong><br> is an Asynchronous function that means execute this function after passing this special time. <br>
+    <br>setTimeout(() => {
+      <br>console.log("shows HELLO after three second");  
+      <br>}, 3000);
+
+  </h6>-------
+<!---Web API:  -->
+  <h5>-Web API: </h5>
+  <h6>the time that an Asynchronous code needs to finish and then execute happen in another place(web page) outside of your code, called API.</h6>------
+ <!-- -Callback function: -->
+<h5>-Callback function: <br> <strong>meaning:</strong> when that time is finished then the result shows as a callback function.</h5>
+  
+</div>
+
+<!--http-request:  -->
+<div class="http-request">
+  <h5>http-request:</h5>
+  <h6>-when we need to (get/ post/ put/ delete) information from server we need to use http request.
+    <br>-get(means: receive)
+    <br>-post(means: send)
+    <br>-put(means: chang)
+    <br>-delete(means: remove) <br> 
+  </h6>
+  <!-- API -->
+  <h6><strong>-API: is a connection between your system and central system</strong><br></h6>
+  <!--API key:  -->
+  <h6><strong>-API key:</strong> is a line of code that you can get it from a server to send them a request and then they send an API KEY to your Email then you can copy it and use it. <br>ex: var ApiKey = "abcdefgh12345"; </h6>
+<!-- -Access JSON objects from API and URL: -->
+  <h6><strong>-Access JSON objects from API and URL: </strong><br><br>
+
+    var ApiKey = "0b14bd9f90173719c5c03461e31ad0ac";
+    <br>var queryURL = "http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid="+ApiKey;
+
+   <br><br>console.log(queryURL);
+  </h6>--------
+<!--  -URL(API Endpoint):-->
+  <h6><strong>-URL(API Endpoint): is the place where the Source codes are in. </strong><br>ex: https://www.imdb.com/ </h6>
+
+  <h6><strong>example:</strong>
+
+    <br>var ApiKey = "abcdefgh12345";
+    <br>var cityName="paris";
+    <br>var URL= "https://api.openweathermap.org/data/2.5/weather?q="<strong>+cityName</strong>+"&appid="<strong>+ApiKey</strong>;<br><br> 
+
+    <strong>definition: <br>1- (main path)  <br> "https://api.openweathermap.org/data/2.5/weather <br><br>2- ? (start query string) <br><br>3- (key)(key:value one)<br> q="+cityName<br><br>4- &( separate tow set of key:values each other) <br><br>5- (api key)(key:value tow) <br> "appid="+ApiKey; </strong>
+
+  </h6>
+</div>
+<!--  Manage-Asynchronous-code-->
+<div class="Manage-Asynchronous-code">
+  <h5>Manage Asynchronous code:</h5>
+  <h6>-callback function and promise object use to manage Asynchronous code which means:
+    <br>-in normal calling Asynchronous code, the Asynchronous code will execute randomly if we do not manage them. so to manage them in what order and when the Asynchronous code to execute we need to use callback function or promise object.
+  </h6><br>
+
+<!-- callback function -->
+  <h5>callback function:</h5>
+  <h6>-when we use a function as an argument in another function, the argument function is callback function. <br><br>
+  
+
+      <strong>comparison:</strong><br><br><strong>ex 1:(normal calling function with setTimeout)</strong>
+      <br>function Func1(){
+        <br>setTimeout(function (){
+          <br>console.log <strong>("the first function execute after second function");</strong> 
+          <br> },1000);
+          <br>} 
+          <br><br>function Func2(){ 
+            <br>console.log <strong>("the second function execute first "); </strong>
+            <br>} 
+           <strong><br><br>Func1();
+            <br>Func2();</strong> 
+
+            <br><br><strong>ex 2:(callback function with setTimeout)</strong>
+            <br>function Func1(Func){
+              <br> setTimeout(function (){ 
+                <br>console.log <strong>("the first function execute first.");</strong>
+                <br>Func();
+                <br>},3000);
+                <br>} 
+                <br><br>function Func2(){ 
+                  <br> console.log <strong>("the second function execute second.");</strong>
+                 
+                  <br>} 
+                  <br><br> <strong>Func1(Func2)</strong>
+                   <br>(Func2)=> is a callback function.
+<!-- callback hell -->
+    <br><br><strong>callback hell:</strong> <br>-when we use several  call back function into one function it calls callback hell.</h6>----------
+
+
+<!--  promise:-->
+  <h6> <strong>promise: <br></strong>-promise is an object to check if the code is true or false (resolve or reject) and also use to manage Asynchronous code. <br>in promise we should use: <br>
+  
+  <br>1- <strong>const welcome = new Promise(function (resolve, reject){})</strong>
+
+  <br>console.log(welcome);=> Promise {}
+  <br><br>2- <strong>resolve</strong> work with (.then) which means that code is working. <br>-the first action after Asynchronous code is finished should call by (.then). 
+  <br><strong>welcome.then(function () </strong>{
+    <br>console.log("call resolve (correct!)");
+    <br>});
+    <br><br>3- <strong>reject</strong> works with (.catch) which means that code have an error! 
+    <br><strong>welcome.catch(function ()</strong> {
+      <br>console.log("call reject (error!)");
+      <br>});
+  
+  </h6><br>
+  <h6> <strong>ex:</strong>
+       <br><strong>const welcome = new Promise(function (resolve, reject) </strong>{
+       <br>setTimeout(() => {
+        <br> var a="v"
+        <br>var b="b"
+        <br> <br>if (a==b) { 
+        <br><strong>resolve();</strong>   
+        <br>}else{
+        <br> <strong>reject();</strong>
+        <br><br>} 
+       
+        <br>}, 4000);
+        <br>});
+  
+        <br> <br><strong>welcome.then(function () </strong>{
+        <br>console.log("call resolve (correct!)");
+        <br>});
+
+        <br> <br> <strong>welcome.catch(function ()</strong> {
+        <br>console.log("call reject (error!)");
+        <br>});
+ 
+  </h6>
+
+</div>
+<!-- fetch -->
+<div class="fetch">
+  <h5>fetch:</h5>
+  <h6>-fetch is a kind of promise that use to send URL to server.</h6>
+
+  <h6><strong>-to fetch an URL we need to do:</strong>
+  <br><br><strong>1- fetch(URL)</strong>
+
+    <br><br><strong>2- receive the server response with JSON format : <br>we always need to use word (response).  </strong>
+    <br>.then(function(response) {
+    <br>return response.json();
+    <br> })
+
+    <br><br><strong>3- receive JSON data in your local code: <br>
+   ( we should write the code here) </strong>
+    <br>.then(function(data) {
+    <br>console.log(data);
+    <br>})
+
+    <br><br><strong>4- set a function to get errors:</strong>
+    <br>.catch(function (error) {
+    <br>console.log( `errrrorrr! ${error}`);   
+    <br>}) <br>
+  
+  </h6>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- start-links================================================== -->
+    <!-- bootstrap-script start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap-script end -->
+<!-- ============================================================== -->
+
+<!-- start-js-link -->
+<script src="/assets/javascript/API.js"></script>
+<!-- end-js-link -->
+<!-- end-links===================================================== -->
+<div style="margin-bottom: 500px;"></div>
+</body>
+</html>

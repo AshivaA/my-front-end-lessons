@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+
+     <!-- bootstrap-css--link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- local-css-link -->
+    <link rel="stylesheet" href="/assets/css/react.css">
+</head>
+<body>
+
+<!-- =================================================================== -->
+     <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success" width: 100%;>
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./html-form.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/css-learning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/flexbox.html" target="_blank">css-flexbox</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/flex-project.html" target="_blank">flex-project</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/css-position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/API.html" target="_blank">API</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/node.html" target="_blank">Node</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/react.html" target="_blank">React</a>
+                  </li>
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+           
+            <!-- start-page-title -->
+            <h1 style="background-color: burlywood; padding: 8px;">React-page</h1>
+            <br>
+            <!-- end-page-title -->
+<!-- =================================================================== -->
+<!-- syntax -->
+<div class="react-pages-syntax">
+<h5>react-pages-syntax:</h5>
+
+<h6><strong>component syntax:</strong>
+  <br>function componentName() {
+    <br> return (
+    <br>-write code here
+    <br>);
+    <br>}
+</h6>-------------
+<h6><strong>App.jsx:</strong>
+ 
+<br>import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+<br>import Navbar from "./components/Navbar";
+
+<br><br>function App() {
+ <br> return (
+  <br>< div>
+    <br>< Navbar />
+  <br>< /div>
+  
+  <br>);
+<br> }
+
+<br><br>export default App;
+
+</h6>--------------
+
+
+<h6><strong>components pages:</strong>
+<br>import React from "react";
+<br><br>function Navbar() {
+  <br>return (
+    <br>< div >
+      <br> < h2 >Home< /h2>
+      <br>< /div>
+      <br>);
+      <br>}
+
+      <br><br>export default Navbar;
+
+</h6>--------------
+
+
+<h6><strong>useState:</strong>
+  <br><strong> ex: in MainPage.jsx page:</strong>
+  <br><br> <strong> import { useState, useEffect } from 'react';</strong>
+  <br><br><strong>function MainPage() {
+
+  <br> let [word, setWord]= useState("word one")</strong>
+  <br><br><strong> function changWord() {
+    
+   <br>setWord("word tow")
+   <br> console.log(word);
+   <br>}</strong>
+
+   <br><br>return (
+  
+   <br>< div className="parents-main-page" >
+
+     <br>< div className="state">
+       <br>< h4> <strong>{word}</strong>< /h4>
+       <br>< button <strong>onClick= {changWord}</strong> >change the word< /button>
+     <br>< /div>
+  
+   <br>< /div>
+
+       <br> );
+       <br> }
+
+       <br><br>export default MainPage;
+
+
+
+</h6>-----------
+
+
+<h6><strong></strong></h6>
+
+
+</div>
+
+
+
+<!-- installation -->
+<div class="installation">
+
+<h5>installation:</h5>
+<h6><strong>1-create React app (vite+React):</strong>
+
+  <br><strong>a- npm create vite@latest your-folder-name -- --template react</strong>
+  <br>-open terminal in vs code and write: 
+  <br> (npm create vite@latest your-folder-name -- --template react) <br>-now you have a folder with ( src folder/ package.json/ public folder ) into it.
+
+  <br><br><strong>b- </strong><strong>cd your-folder-name</strong> (to go into your folder)
+
+  <br><br><strong>c- </strong><strong>npm i</strong> (to install node_modules)
+
+  <br><h6 style="color: darkred;"><strong>important:</strong>
+  <br>we don't need to add gitignore for node_modules. because it is created when we create our folder and node_modules is already exist into it.
+  </h6>
+
+  <br><strong>d- </strong><strong>npm run dev</strong> (to run vite from=>  package .json->scripts-> "dev":"vite")
+
+  <br><br><strong>e- </strong>copy the link from  <strong>local: http://localhost:5173 </strong> and past it in your browser to execute your react code.
+
+  <br><br><strong>f- control+c</strong>
+  <br>use (control+c )after (local: http://localhost:5173) to stop the Vite and write new command.
+
+</h6><br><br>-------------
+
+
+<!-- 2-src folder -->
+<h6><strong>2-src folder:</strong></h6>
+<h6><strong>- src folder is the place where we should write all our code there</strong>
+  <br>-in your src folder you have (assets folder/ App.css / App.jsx / index.css / main.jsx ) 
+
+     <br><h6 style="color: darkred;"><strong>important:</strong>
+     <br>- you should only writ your code in src folder. if you want to create any other folders for your project you should create them only in src folder (ex: components folder).</h6> 
+
+     <!--a- main.jsx -->
+     <h6><strong>a-main.jsx(you don't need to do anything in main.jsx)</strong>
+      <br>-main.jsx is a file that our React app start to execute by importing our code in App.jsx file.
+      <br><br> <strong>where my react code store? </strong> 
+      <br>our react code in App.jsx file will store in div root in <br>( index.html page < div id="root">< /div> )
+      
+      <br><br><strong>how div root will select?</strong>
+      <br>- the div root will select by main.jsx. 
+      <br>ReactDOM.createRoot(document.getElementById('root')).
+      
+      </h6>
+
+<!--b- App.jsx -->
+     <h6><strong>b-App.jsx file:</strong>
+      <br>App.jsx stores our components pages.
+      <br><br>import Navbar from "./components/Navbar";
+      <br>import Header from "./components/Header";
+      
+      
+      <br><br>function App() {
+        <br>return (
+          <br>< div>
+            <br>< Header />
+            <br>< Navbar />
+            <br>< /div>
+            <br>);
+            <br>}
+      
+            <br><br>export default App;
+
+    </h6>-----------
+
+<!-- 3-index.html -->
+<h6><strong>3- index.html file:</strong>
+  <br>if we need to add CDN link  or static css file( the style that we don't want to change in html file )we should add it in ( index.html ) file into the head tag.
+</h6>
+   
+</h6><br>-----------
+
+<!--4- Bootstrap  -->
+<h6><strong>4- install Bootstrap app:</strong>
+<br><strong>a- npm i bootstrap</strong>
+<br>in your terminal write (npm i bootstrap)
+
+<br><br><strong>b- import this 2 to ( main.jsx ) file:</strong>
+<br> -import 'bootstrap/dist/css/bootstrap.min.css' => (import css bootstrap) 
+<br> -import * as bootstrap from 'bootstrap' => (import javascript bootstrap)
+
+<br><br><strong>c- npm run dev</strong></h6>-----------
+
+<!--5- react-router-dom -->
+<h6><strong>5-install react-router-dom <br>(is a React routing(page) library to navigate between pages in multiple pages react app.)</strong>
+
+<br><br><strong>-npm i react-router-dom </strong>
+<br> if we want to have an app white several pages, for finding the pages paths we need to install this library.
+
+<h6><strong>-how to use react-router-dom?</strong>
+  <!-- 1-in APP.jsx -->
+<br><strong>1-  in App.jsx page:</strong>
+<br>a- import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+<br><br>b- function App() {
+  
+  <br>return (   
+  <br>< Router>
+    <br>< Routes>
+   
+    <br><br>< Route path="/" element={< MainPage />} />
+      <br>< Route path="/main" element={< MainPage />} />
+      <br> < Route path="/main/page-one" element={< PageOne />} />
+      <br>< Route path="/main/page-tow" element={< PageTow />} />
+    
+    
+
+      <br>< Route path="*" element={< h1>Not Found!< /h1>} />
+      <br><br>< /Routes>
+        <br>< /Router>
+ 
+   
+    
+        <br> )
+        <br> }
+<br><br>-(we can check pathname in ( inspect->console->location->pathname )in each page.)
+</h6><br>
+<!-- 2-any other pages -->
+<h6><strong>2-any other page that we want to show the links there:</strong>
+
+  <br><br>a- import links by react-router-dom:( <strong>Link </strong>should start with capital letter )
+  <br> <strong>import { Link } from 'react-router-dom';</strong>
+
+  <br><br>b- function Navbar() {
+
+    <br>return (
+
+    <br>< div className='parents-div-navbar'>
+      <br>< h1>navbar< /h1>
+<strong>
+    <br>< div className="link">
+    <br><br>< nav>
+      <br>< ul>
+  
+        <br>< li>< Link to="/main/page-one">page one < /Link>< /li>
+        <br>< li>< Link to="/main/page-tow">page tow < /Link>< /li>
+        <br>< /ul>
+        <br>< /nav>
+        <br><br>< /div>
+</strong>
+      
+
+       
+        <br> )
+    
+        <br> }
+
+</h6>
+
+</h6>-----------
+<!--6-css folder -->
+<h6><strong>6- making style:</strong>
+  <br><br><strong>1- by css folder:</strong>
+<br><strong>a- make a styles folder into your src to store all css files. </strong>
+<br><strong>b- you should import css file in related jsx page</strong>
+
+<br><br>ex:
+<br>-in styles folder we should create our css files: ( Header.css )
+ 
+<br><br>-in ( Header.jsx ) page into component we should import related css file:
+<br>import "../styles/Header.css";
+
+<br><br>- by using className in css file we can style as usual.
+<br>ex: in Header.css 
+<br>.parents-header-div{
+  <br>background-color: rgb(144, 190, 192);
+<br> } <br>--
+
+
+<!-- tailwind -->
+
+<br><br><strong>2-Tailwind:</strong>
+<br>using tailwind at the same time we can style html tags and make a responsive page as well.
+<br><br>ex:< h1 className="bg-emerald-500" >navbar< /h1>
+
+<br><br><strong>- install Tailwind: ( https://tailwindcss.com/docs/guides/create-react-app ) </strong>
+<br><br> <strong>a- npm install -D tailwindcss</strong>
+<br> <strong>b- npx tailwindcss init</strong>
+<br><br> <strong>c- in tailwind.config.js: </strong>
+<br> add  <br><strong>content: [
+  <br> "./src/**/*.{js,jsx,ts,tsx}",
+  <br>],</strong> <br>to   module.exports 
+  
+
+<br><br><strong>d- in index.css:</strong> 
+<br>1- you should comment every thing in the page and then past,
+<br> <strong>2- @tailwind base;
+  <br>@tailwind components;
+  <br>@tailwind utilities;</strong>
+
+<br><br> <strong>e- npm run dev</strong><br>--
+
+<h6 style="color: darkred;"> <strong>important: fix navbar items</strong>
+  <br>in Navbar.css page:
+  <br><br>.parents-navbar{
+    <br>background-color: rgb(144, 190, 192);
+    <br>justify-content: space-between;
+    <br>display: flex;
+    <br>align-items: center;   
+    <br> }
+
+</h6>--
+
+<h6 style="color: darkred;"> <strong>important: fix main page as an entire page</strong>
+  <br>in MainPage.css page:
+  <br><br>.parents-main-page{
+    <br>background-color: transparent;
+    <br>min-height: 100vh;
+    <br> }
+
+</h6>--
+
+<h6 style="color: darkred;"> <strong>important: fix footer at the bottom of  the page</strong>
+<br>in footer.css page:
+<br><br>.parents-footer{
+  <br> background-color: coral;
+  <br>position:absolute;
+  <br>left: 0;
+  <br>bottom: 0;
+  <br>right: 0;
+ 
+  <br>} </h6>
+
+  
+</h6>-----------
+
+<h6 style="color: darkred;"><strong>important:</strong>
+<br>when we finished all the installations we should check <strong>( {}package.json -> dependencies ) </strong> to be sure that all the libraries are installed.
+</h6>
+</div>
+
+<!-- import and export in react -->
+<div class="react-import-modules">
+  <h5>import/export modules in react:</h5>
+  <h6><strong>1- import(): (use to enter modules in   react pages)</strong>
+
+  <h6><strong>a-import react library in each jsx component:</strong>
+     <br>( import React from 'react'; )
+    <br><br> <strong>b- import in other components should be in page and in component both:</strong>
+   
+    <strong> 
+      <br>1- import in page:
+      <br> import Navbar from "./components/Navbar";
+     </strong> 
+    
+      <br><br>function App() {
+      <br>return (
+        <br>< div>
+        <br><strong>2- import in component < Navbar /></strong>
+        <br>< /div>
+        <br> );
+        <br> }
+     
+    </h6>
+ 
+  </h6>
+  
+  <h6><strong>2- export: (use to send values from react page)</strong>
+    <br><h6 style="color: darkred;"><strong>important:</strong>
+      <br>we only need to export components in own page.
+      <br>ex : in App.jsx page:
+      <br>export default App;
+    
+    </h6><br>
+    
+
+    <h6><strong>example: in App.jsx page:</strong>
+     
+      <br>import Navbar from "./components/Navbar";
+      
+      <br><br>function App() {
+        <br>return (
+          <br>< div>
+          <br>< Navbar />
+          <br>< /div>
+          <br> );
+          <br> }
+      
+          <br><br>export default App;
+    </h6>---
+
+  
+  </div>
+
+
+
+
+<div class="react-description">
+<!-- Description: -->
+  <h6><strong>Description: <br></strong>-React is a javascript library to make a web page. 
+    <br>-to check the new elements in react we can use <strong>inspect</strong>.
+  </h6><br>
+
+  <h6><strong>How to use react: <br></strong>-we can use React in tow ways: <br> </h6> 
+    
+<!-- 1- as a part of web page: -->
+    <h6><strong>1- as a part of web page:</strong> <br> for example navbar or sidebar. </h6>
+    
+<!-- 2- as an entire web page or(SPA): -->
+  <h6><strong>2- as an entire web page or(SPA):</strong> <br>(SPA) or single page application call (SPA) because, we send request to server <strong> only once</strong> to receive react components and after that we can manage our web page with react components.</h6><br>
+</div>
+
+
+<!-- html-vs-jsx -->
+<div class="html-vs-jsx">
+
+  <h5>html vs jsx:</h5>
+
+ <!-- className:  -->
+ <h6><strong>-className:</strong>
+  <br>we should always use <strong>className</strong> in react instead of class in html.</h6>---
+
+  <!-- only one parents element: -->
+  <h6><strong>-only one parents element:</strong>
+    
+      <br>-we should only have one parents element (main/div) as a main element when we want to have multiple children in any jsx file.
+
+      <br><br>function App() {
+        <br> return (
+         <br><strong><  parents div></parents></strong>
+           <br>< Header />
+           <br>< Navbar />
+         <br><strong>< / parents div></strong>
+         
+         <br>);
+       <br> }
+     
+  </h6>---
+  <!-- use {} to add value: -->
+
+  <h6><strong>-use {} to add dynamic value:</strong>
+    <br>function Navbar() {
+
+      <br><br>const title= "welcome to my page";
+      <br>const date= dayjs().toString();
+  
+      <br><br>return (
+  
+      <br>< div>
+        <br>< h1> my navbar< /h1>
+        <br>< h4>{title}< /h4>
+        <br>< p>Today is: {date}< /p>
+        <br>< /div>
+        <br>)
+      
+        <br> }
+
+        <h6 style="color: darkred;"><strong>important:</strong>
+          <br>(we should make variables in function not in return.)
+        
+        </h6>
+  
+        <br><br><strong >-in browser we have:</strong>
+        <br>my navbar
+        <br>welcome to my page
+        <br>Today is: Tue, 06 Feb 2024 15:07:07 GMT
+
+    <!-- note -->
+        <br><br>-note 1: we don't need to use backtick to add text.
+        <br>-note 2: we should add dayjs CDN to index.html file. 
+  </h6><br>---
+<!-- onClick event -->
+  <h6><strong>-onClick event:</strong>
+  <br><br>function Button() {
+
+    <br>btn.textContent= "I changed to green"
+    <br>btn.style.backgroundColor= "green"
+    
+<br> }
+
+<br><br>function Navbar() {
+  <br>const clickBtn= Button
+  <br><br> return (
+  <br>< div>
+    <br>< button id="btn" onClick={clickBtn}>click me< /button>
+    <br>< /div>
+    <br>)
+  
+    <br> }
+
+    <br><br><strong >-in browser after click: </strong>
+    <button style="background-color: black; color: azure; padding: 5px;">click me</button>
+    <strong>will changed to</strong>
+    <button style="background-color: green; color: azure; padding: 5px;">I changed to green</button>
+
+  
+  </h6>
+</div>
+ 
+<div class="component">
+
+  <h5>component:</h5>
+  <h6>component is function that we can use from functionalities and Templates(jsx) into it.
+
+    <br><strong>-functionalities are javascript code.</strong>
+
+    <br><strong>-Templates(jsx) are HTML tags.</strong>
+
+    <br><br> <strong>component syntax:</strong>
+
+    <br>function componentName() {
+      <br> return (
+      <br>-write code here
+      <br>)
+      <br>}
+
+  </h6>
+
+  <h6><strong>-component Name:</strong>
+    <br>component name should  <strong>start with capital letter.</strong></h6>
+  
+</div>
+
+<!-- hook -->
+<div class="hook">
+  <h5>hook:(all hooks are function and every hooks use for special things. )</h5>
+  
+  <h6><strong>1- hooks always write withe <strong>(use)</strong> </strong> at the first hooks name</h6>
+  <h6><strong>2- we should write hooks at the top of all our code in component.</strong>
+   <br><br>function MainPage() {
+    <br>  <strong>let [word, setWord]= useState("word one")</strong>
+    <br>(our code)
+    <br>}
+  
+  </h6>
+
+  </div>
+
+<!-- state/useState -->
+<div class="useState">
+  <h5>state/ useState:</h5>
+  <h6><strong>state:</strong>
+  <br>-State is a built in object in React.
+  <br>-use for saving information in components.(works like variables in JS) </h6>
+
+  <h6 style="color: darkred;">important:
+  <br>-states can change during the time, and to see the result after changes:  <br>a-component will render again <br>b-template will update <br>c- and finally the new changes will update in DOM.
+  </h6> <br>
+  
+  <h6><strong>-how to use state:</strong>
+  
+   <br><strong>a- we should import UseState in any page,that we want to do changes in DOM</strong>(here is in MainPage.jsx):
+   <br> <strong>import { useState } from 'react';</strong>
+
+   <br><br> <strong>b- we should use a variable and a function to use useState:</strong>
+   <br> <strong>let [word, setWord]= useState("word one")</strong>
+   <br>- let word is a variable that store the default information in DOM. in fact: 
+   <br><strong>let word= "word one"</strong>
+   <br>- setWord is a function to change the word variable in DOM. in fact:
+   <br> <strong>let setWord= ("word tow")</strong>
+
+   <br><br> ex: we want to change the word by clicking the button in <strong>MainPage.jsx</strong> page.
+   <br><strong>in MainPage.jsx page:</strong>
+   <br><br> <strong>a- import { useState } from 'react';</strong>
+   <br><br><strong>b-function MainPage() {
+
+   <br> let [word, setWord]= useState("word one")</strong>
+   <br><br><strong>c- function changWord() {
+     
+    <br>setWord("word tow")
+    <br> console.log(word);
+    <br>}</strong>
+
+    <br><br>return (
+   
+    <br>< div className="parents-main-page" >
+
+      <br>< div className="state">
+        <br>< h4> <strong>{word}</strong>< /h4>
+        <br>< button <strong>onClick= {changWord}</strong> >change the word< /button>
+      <br>< /div>
+   
+    <br>< /div>
+
+        <br> );
+        <br> }
+
+        <br><br>export default MainPage;
+
+  </h6>---
+
+  <!-- -useEffect: -->
+  <h5>-useEffect:</h5>
+ <h6>(we use useEffect to <strong>fetch data</strong>  using URL to update DOM and also for using  <strong>timer(setTimOut/ setInterval)</strong>.)</h6>
+
+  <h6><strong>-useEffect syntax receive tow argument:</strong>
+  <br> useEffect(()=>{our code} ,[])
+  <br>1-arrow function:  ()=>{}
+  <br>2- an array []
+
+  </h6><br>
+
+  <h6><strong> 1-fetch data using useEffect example :</strong>
+  <br><br><strong>import { useState, useEffect } from "react";</strong> 
+  <br>import { json } from 'react-router-dom'; (you don't need to make it. it will make  automatically)
+
+  <br><br>var ApiKey= "c9113a8fe76d40144dbe3243f477148e"
+  <br>var URL = "http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid="+ApiKey;
+  <br>console.log(URL);
+
+  <br><br>function ReactApi() {
+
+  <br><strong>let [Cities, setCities]= useState({})
+    <br>console.log(Cities); </strong> <strong style="color: darkred;">important: (cities is our root property to access the json objects.) <br>for ex:{Cities[3].name}</strong>
+   
+  
+
+  <br><br><strong>useEffect(()=>{
+    <br>fetch(URL)
+    
+    <br>.then(response=> response.json())
+    <br>.then(json=> setCities(json))
+
+    <br>} ,[]);</strong>
+
+ 
+    <br><br>return(
+
+    <br>< div className='parents'>
+      <br>< h6>city name:  {Cities[3].name}< /h6>
+      <br>< h6> country: {Cities[3].country}< /h6>
+      <br>< h6> state: {Cities[3].state}< /h6> 
+      <br>< /div>
+      <br> )
+ 
+      <br>}
+
+      <br><br>export default ReactApi;
+
+  </h6>--
+  <h6><strong> 2-setInterval() timer using useEffect example :</strong></h6>
+
+  <h6>The setInterval() method executes a function    <strong>repeatedly</strong> at a specified interval(time space).
+  <br><br><strong>import React, { useState, useEffect } from "react";</strong>
+ 
+  <br><br>const Timer = () => {
+  <br>const [count, setCount] = useState(0);
+ 
+  <br><br><strong>useEffect(() => {
+        
+    <br>const interval = setInterval(() => {
+      <br> setCount(count + 1);
+      <br> }, 1000);
+ 
+       
+      <br><br> return () => clearInterval(interval);
+      <br><br>}, [count]);</strong>
+ 
+      <br><br>return (
+        <br>< div>       
+          <br>< h1>{count} second passed< /h1>
+          <br>< /div>
+          <br>);
+          <br>};
+ 
+          <br><br>export default Timer;
+
+  </h6>-- <br>
+
+
+
+  <h6><strong> 3-setTimeout() timer using useEffect example :</strong></h6>
+
+  <h6>The setTimeout method calls a function or runs some code after a period of time.
+  <br><br><strong>import React, { useState, useEffect } from "react";</strong>
+ 
+  <br><br>const Timer = () => {
+  <br>const [count, setCount] = useState(0);
+ 
+  <br><br><strong>useEffect(() => {
+      
+    <br>const Timer = setTimeout(() => {
+      <br>setCount("this sentence will appear after 3 seconds");
+      <br> }, 3000);
+ 
+       
+      <br><br> return () => clearTimeout(Timer);
+      <br>}, [count]);</strong>
+ 
+     <br> <br>return (
+        <br> < div>          
+        <br> < h1>{count}< /h1>  
+        <br> < /div>
+        <br>);
+        <br>};
+ 
+        <br><br>export default Timer;
+
+  </h6><br>
+
+  <h6 style="color: darkred;">important:
+  <br><strong>clearInterval()/ clearTimeout():</strong>
+  <br>are methods use to clear the interval timer. which means that without them the time passed  <strong>faster a second.</strong> 
+  </h6>
+
+</div>
+
+<!-- props -->
+<div class="props">
+
+<h5>props: (props is an object)</h5>
+
+<h6><strong>-when we want to send information from a parents component(ex:App.jsx) to children component (ex:Navbar.jsx) we should use props.</strong>  
+
+
+</h6>
+<h6 style="color: darkred;">important:
+  <br>we can only send information from parents component to child component <strong>NOT</strong> child component to parents component.
+</h6>
+
+<h6><strong>-How to do props:</strong>
+  <br>to send information from parents component to child component we need <strong>tow component:
+    <br>1- parents component
+    <br>2- children component 
+  </strong>
+</h6><br>
+
+<h6><strong>1- parents component( here is MainPage.jsx)</strong>
+  <br>we need to make a property(key=value) for props object.
+<br><br><strong></strong>< Navbar navProps="navbar-props" />
+<br>(navProps is property key so we can name it anything we want to.)
+
+<br><br><strong>ex:</strong>
+<br>function MainPage() {
+
+  <br>return (
+ 
+  <br>< div className="parents-mainPage" >
+  <br><strong>< Navbar navProps="navbar-props" /></strong>
+
+  <br>< /div>
+
+  <br> );
+  <br> }
+
+  <br><br> export default MainPage;
+</h6><br>
+
+<h6><strong>2- children component (here is Navbar.jsx)</strong>
+  <br>we need to enter key property to child components. we should do it in 3 stage:
+
+  <br><br><strong>ex:</strong>
+  <br> <strong>1-function Navbar(props)</strong> {
+    <br> <strong>2- console.log(props);</strong>
+        
+    <br><br> return (
+    
+   <br>< div className='parents-navbar'>
+               <br> <strong>3- < h2>{props.navProps}< /h2> </strong>(props.key)
+               <br> < /div>
+              <br>)
+        
+              <br>}
+    
+    <br> <br>export default Navbar;
+ 
+  <h6 style="color: darkred;">important
+  <br>-(parents component are all components in App.jsx component.)
+
+  <br><br> <strong>1-in App.jsx component:</strong>
+  <br>import MainPage from './pages/MainPage'
+  <br>import PageOne from './pages/PageOne'
+
+
+        <br><br> <strong>2- in MainPage.jsx or in any other App.jsx pages.</strong>
+        <br>import Navbar from '../components/Navbar';
+        <br><br>function MainPage() {
+          <br><br>return (
+          < div className="parents-main-page" >
+            <br><strong>< Navbar navProps="main page-navbar-props" /> (parents component)</strong>
+            <br>< /div>
+            <br>);
+            <br>}
+            <br><br>export default MainPage;
+
+
+
+        <br><br> <strong>3- in Navbar.jsx</strong>
+
+        <br>function Navbar(props) {
+          <br>console.log(props);
+          <br><br>return (
+          <br>< div className='parents-navbar'>
+            <br>  <strong>< h2>{props.navProps}< /h2> (child component)</strong>
+            <br>< /div>
+            <br> )   
+            <br>}
+            <br><br> export default Navbar;
+
+
+        <h6 style="background-color: cadetblue; padding: 5px; margin: 5px; text-align: center;">
+          <br>the result in main web page  navbar is:
+          <br><br> <strong>main page-navbar-props</strong>
+          </h6>
+  </h6><br>
+
+<h6><strong>- we can use the same variable with different data in props. </strong>
+<br><br><strong>-in parents component:</strong>
+<br>function PageTow() {
+
+   <br> <strong>const text= "text one" (same variable) </strong>
+   <br><br>return (
+    <br>< div className="parents-pTow" >
+    <br> <strong>< Sidebar sidBarOne="sidebar One"  text= {text}/> ( same variable= same data)</strong>
+    <br>< h2 >page tow< /h2>
+    <br> <strong>< Sidebar sidBarTow="sidebar Tow" text= "text tow"/> ( same variable= different data)</strong>
+    <br>< /div>
+    <br> );
+    <br> }
+
+    <br><br>export default PageTow;
+<br><br>
+<strong>-in children component:</strong>
+<br><br>function Sidebar(props) {
+  <br>console.log(props);
+      
+  
+  <br><br>return (
+  
+    <br>< div className='parents-sidebar'>
+              <br> <strong>< h2 className='sidBarOne'>{props.sidBarOne} {props.text}< /h2></strong>
+              <br> <strong>< h2 className='sidBarTow'>{props.sidBarTow} {props.text} < /h2></strong>      
+    <br>< /div>
+              <br>)
+              <br>}
+              <br><br>export default Sidebar;
+
+</h6>
+
+
+</h6>
+
+</div>
+
+<!-- Netlify -->
+<div class="netlify">
+
+<h5>Netlify: (make deployment link)</h5>
+<h6>Netlify is a website to make deployment link for react.</h6>
+
+<h6><strong>-make a react deployment using gitHub project:</strong>
+
+  <br><strong>1- go to Netlify website and login with your gitHub account</strong>
+
+  <br><strong>2- go to Site-> Add new site-> import an existing project</strong>
+  <br><strong>3- Deploy with gitHub </strong>
+  <br><strong>4- if your repo wasn't there: </strong>
+  <br>a- go to configure the Netlify app on GitHub
+  <br>b- in Repository access-> only select repositories-> select repositories-> save
+  <br><strong>5-click on your project-> Deploy (project-name) </strong>
+  <br>you have a deployment link with ( netlify.app )at the end.
+</h6>--
+
+<h6><strong>-make react deployment using drag and drop:</strong>
+<br><strong>1- go to Netlify website and login with your gitHub account</strong>
+
+<br><strong>2- go to Site-> Add new site-> Deploy manually</strong>
+<br><strong>3- drag and Drop your folder to upload </strong>
+<br><strong>4- in publish deploy... -> options-> Deploy settings </strong>
+<br><strong>5- in configuration for... -> there is a deployment link with (netlify.app) at the end.  </strong>
+
+</h6>--
+
+
+</div>
+
+
+
+<!-- make a react app -->
+<div class="make-a-react-app">
+
+  <h5> how we can make a multiple pages react app:</h5>
+  <h6><strong>1-in components folder make Navbar.jsx / Footer.jsx component </strong></h6>---
+
+  <h6><strong>2- make pages folder in src folder </strong></h6>---
+
+  <h6><strong>3- into pages folder makes your pages components (start with Capital letter)</strong>
+  <br>ex: MainPage.jsx
+  </h6>---
+
+  <h6><strong>4- in any pages component make a component/import/export </strong>
+  <br>ex:
+  <br>import React from "react";
+
+  <br>function PageTow() {
+  <br>return (
+  <br>< div >
+  <br>< h2 >page tow< /h2>
+  <br>< /div>
+  <br> );
+  <br> }
+  
+  <br><br>export default PageTow;
+  </h6>---
+
+<h6><strong>5-import Navbar and Footer to each page we want to be there. </strong>
+<br><br>-for example in main page we should do:
+
+<strong>
+  
+  <br>import Navbar from '../components/Navbar';
+  <br>import Footer from '../components/Footer';</strong>
+
+
+<br><br>function MainPage() {
+
+  <br>return (
+   
+  <br>< div className="parents-div-main-page" >
+    <br><strong>< Navbar /></strong>
+    <br>< h2 >main page< /h2>    
+    <br><strong>< Footer /></strong>
+    <br>< /div>
+
+    <br> );
+    <br> }
+
+</h6>---
+
+<h6><strong>6-make an images folder in src folder:</strong>
+<br><strong>-import picture in jsx component that you want to have picture.</strong>
+<br>ex:
+<br><strong>import Desk from '../images/Desk.jpg';</strong>
+<br><br>function MainPage() {
+
+  <br>return (
+     
+  <br>< div className="parents-main-page" >
+
+    <br><br><strong>< div className="images">
+      <br>< img className="desk-image" src={Desk} alt="desk"  /> 
+      <br>< /div></strong>
+
+      <br><br>< /div>
+  
+      <br> );
+      <br> }
+
+</h6>---
+
+<h6><strong>7-in App.jsx file import( react/react-router-dom/ pages component ) </strong></h6>
+
+  <h6>
+  
+ 
+  <br>import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+  <br>import MainPage from './pages/MainPage';
+  <br>import pageOne from './pages/pageOne';
+  <br>import pageTow from './pages/pageTow';
+  </h6>
+
+<h6>
+  <br>function App() {
+  
+    <br>return (
+      
+    <br>< Router>
+      <br>< Routes>
+     
+      <br> <br>< Route path="/" element={< MainPage />} />
+        <br>< Route path="/main" element={< MainPage />} />
+        <br>< Route path="/main/page-one" element={< PageOne />} />
+        <br>< Route path="/main/page-tow" element={< PageTow />} />
+        <br>< Route path="*" element={< h1>Not Found!< /h1>} />
+  
+          <br><br> < /Routes>
+          <br>< /Router>
+    
+          <br> )
+          <br> }
+  
+          <br><br> export default App
+</h6>---
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- start-links================================================== -->
+    <!-- bootstrap-script start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap-script end -->
+<!-- ============================================================== -->
+
+<!-- start-js-link -->
+<!-- <script src="./react.js"></script> -->
+<!-- end-js-link -->
+<!-- end-links===================================================== -->
+<div style="margin-bottom: 500px;"></div>
+</body>
+</html>

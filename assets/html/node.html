@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node</title>
+
+     <!-- bootstrap-css--link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- local-css-link -->
+    <link rel="stylesheet" href="/assets/css/node.css">
+</head>
+<body>
+
+<!-- =================================================================== -->
+     <!-- bootstrap-navbar -->
+           <!-- start-bootstrap navbar ========= -->
+           <nav class="navbar navbar-expand-lg bg-success" width: 100%;>
+            <div class="container-fluid">
+      
+              <!-- navbar logo/title/brand -->
+              <a class="navbar-brand" href="#">Logo</a>
+      
+              <!-- hamburger-menu-button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- to move hamburger-menu-items to the right side we need to add justify-content-end to collapse navbar.-->
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./html-form.html" target="_blank">html-form</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/semantic.html" target="_blank">html-semantic</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/css-learning.html" target="_blank">css-learning</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/flexbox.html" target="_blank">css-flexbox</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/flex-project.html" target="_blank">flex-project</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/mediaquery.html" target="_blank">mediaquery</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/grid.html" target="_blank">css-grid</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/css-position.html" target="_blank">css-position</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/bootstrap.html" target="_blank">bootstrap</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/javascript-lessons.html" target="_blank">javascript-lessons</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/if-condition.html" target="_blank">if/operation</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/for-while-loop.html" target="_blank">for/while loop</a>
+                  </li>
+
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/array.html" target="_blank"> array</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/function.html" target="_blank"> function</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/object.html" target="_blank"> object</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/DOM.html" target="_blank">DOM</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/API.html" target="_blank">API</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/node.html" target="_blank">Node</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/html/react.html" target="_blank">React</a>
+                  </li>
+    
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+            <!-- end-bootstrap navbar ========= -->
+           
+            <!-- start-page-title -->
+            <h1 style="background-color: burlywood; padding: 8px;">Node-page</h1>
+            <br>
+            <!-- end-page-title -->
+<!-- =================================================================== -->
+<!--node-explanation  -->
+<div class="node-explanation">
+  <h6> <strong>explanation: <br></strong>-Node.js alow us to run javascript code outside of browser. <br>-actually we use node to make command-line (terminal) applications.</h6>
+</div>
+
+<!-- node installation -->
+<div class="node-installation">
+
+  <h5>(node/package.json/node_modules )installation:</h5>
+
+  <h6><strong>1-install node in your computer from ( Node's website ).</strong> <br>guid to installation: https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs</h6><br>
+
+  <h6><strong>2- check if it is install:</strong> 
+  <br>a-open terminal
+  <br> b- write <strong>(node -v)</strong>
+  <br>c- this is the version of your node (v18.17.1)</h6><br>
+
+  <h6><strong>3- create( {} package.json ):</strong>
+  <br>a-open terminal(in your related folder)
+  <br>b-write ( npm init -y )
+  <br><br>-package.json holds important information about your project(ex:project name) and a list of dependencies required by the application. </h6><br>
+
+  <h6><strong>4-create( node_modules folder/ gitignore ):</strong>    
+    <br> <strong>a- goes to ( https://www.npmjs.com/ )</strong>
+    <br> <strong>b- search any package you want to</strong>(ex:inquirer)
+    <br> <strong>c- goes to install, copy it and past it in terminal</strong> (ex:npm install --save inquirer)
+    <br>-now you have ( node_modules/package-lock.json )
+    <br> <strong>d- create gitignore file:</strong>
+    <br>1- into vs code goes into the root (where we have readme and index.html/index.js)
+    <br>2- open terminal and write <strong>(touch .gitignore)</strong> 
+    <br>3- open the gitignore file and write (node_modules)inside the file. 
+    <br>4-in terminal write this comments:
+    <br>-git status( to check that node_modules is not exist anymore in your github. )
+    <br>-git add <strong>.</strong>
+    <br>-git commit -m "added gitignore"
+    <br>-git push origin main  <br><br>
+
+   <br><strong>how to uninstall the package?</strong>
+    <br>npm uninstall package name( ex: npm uninstall inquirer )</h6> <br>
+
+    <h6 style="color: darkred;"><strong>important: <br></strong> -we should never use node.modules in github so we need to make .gitignore file in project root where we have readme and index.html/index.js</h6><br>
+    
+    <h6><strong>5- to execute the code you write in your( index.js) open terminal and write: <br>node index.js </strong>
+    <br>ex:
+    <br>1- in index.js file ->( console.log("hi"); )
+    <br>2-  to see ("hi") in terminal write -> ( node index.js )
+    </h6>
+   
+</div>
+
+
+<!-- import and export -->
+<div class="node-import-modules">
+<h5>import/export modules in node:</h5>
+<h6><strong>a- require(): (use to import(enter) data/modules into another page)</strong>
+  <br><strong>b- module.exports: (use to export data/modules from a page)</strong>
+
+  <br><br>ex: we want to execute indexOne.js codes in another js file( here is indexTow.js file.)
+<br>so we need 2 js files:
+<br><br> <strong>1- indexOne.js (first file)</strong>
+<br>const name=  ["Shiva","Amin"]
+<br><strong>module.exports= name</strong> (export from this page)
+
+<br><br> <strong>2- indexTow.js (second file)</strong>
+<br> <strong>const result= require("./indexOne")
+ </strong> (import to this page)
+<br> console.log(result);
+
+
+<br><br> <strong>3- in terminal write node indexTow.js</strong>
+
+</h6>---
+
+<h6><strong>How to export tow data/modules :</strong>
+<br>const name=  ["Shiva","Amin"]
+ <br>const age= [38, 39]
+<br><br><strong>module.exports= {name,age}</strong>
+
+</h6>
+
+</div>
+
+<!-- fs-modules -->
+<div class="fs-modules">
+<h5>file access using file system(fs)-modules:
+  <br>-using fs modules we can read/write/appending files .
+</h5>
+<h6>for using  all kind of fs modules we need to import fs modules first:
+  <br> <strong>const fs= require ("fs");</strong>
+</h6>--
+
+<h6><strong>Reading files:</strong>
+<br><strong>1-import fs modules-> const fs= require ("fs");</strong>
+<br><strong>2-syntax:</strong>
+<br>fs.readFile("./fs.csv", (error, data) =>
+<br>error? console.error(error): console.log(data.toString())
+
+<br> )
+
+<br><br><strong>explanation:</strong>
+<br>-("./file.csv" )->(this is the file address. <strong>the csv </strong>is like txt to make a text)
+<br>-(error? console.error(error))-> ( ?means-> if that was error return error)
+<br>-(: console.log(data.toString()))-> ( :means-> if not shows data)
+
+
+</h6>---
+
+<h6><strong>Writing files</strong>
+  <br>-fs.writeFile() method use for asynchronously write data.
+  <br>-fs.writeFileSync() method use for synchronous write data.
+  <br><br>we can: replace data in existing file / add new data to existing file/ or make a new file whit new data
+  <br>a- replace data (in existing file) by <strong>fs.writeFile()/ fs.writeFileSync()</strong> 
+  <br>b- add data to existing file by <strong>fs.appendFile()</strong>
+  <br>c- make a new file with new data by <strong>just write new file name.</strong>
+  
+
+  <br><br><strong>a-replace data:</strong>
+  <br><strong>1-import fs modules-> const fs= require ("fs");</strong>
+  <br><strong>2-syntax</strong>
+  <br><strong>fs.writeFile</strong> ("./existingFile.csv", <strong> " the text we want to replace in existing file "</strong> , (error) =>
+  <br>error? console.error(error): console.log("success")
+  <br> )
+<br>--
+  <br><br><strong>b-add data to existing file:</strong>
+  <br><strong>1-import fs modules-> const fs= require ("fs");</strong>
+  <br><strong>2- syntax</strong>
+  <br> <strong>fs.appendFile</strong>("./existingFile.csv", <strong>" \n add new text to existing file "</strong> , (error) =>
+ <br> error? console.error(error): console.log("success")
+ <br> )
+ <br><br>explanation: \n (make a text in new line)
+ <br>--
+  <br><br><strong>c-make a new file with new data:</strong>
+  <br><strong>1-import fs modules-> const fs= require ("fs");</strong>
+  <br><strong>2- syntax</strong>
+  <br><strong>fs.writeFile</strong> ( <strong>"./newFileName.csv"</strong> , " new text in new file ", (error) =>
+  <br>error? console.error(error): console.log("success")
+  <br> )
+ 
+ 
+
+</h6>--
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- start-links================================================== -->
+    <!-- bootstrap-script start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap-script end -->
+<!-- ============================================================== -->
+
+<!-- start-js-link -->
+<!-- <script src="./node.js"></script> -->
+<!-- end-js-link -->
+<!-- end-links===================================================== -->
+<div style="margin-bottom: 500px;"></div>
+</body>
+</html>

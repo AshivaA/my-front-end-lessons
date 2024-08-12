@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: darkgray;
+    margin: 0;
+
+    /* width: 100%; */
+    overflow-x: hidden;
+}
+
+
+hr{
+    border: 8px solid navy;  
+}
+/* ========= */
+
+.react-pages-syntax{
+    background-color: goldenrod;
+    padding: 7px;
+}
+
+.installation{
+    background-color: rgb(90, 176, 147);
+    padding: 7px;
+}
+
+.react-import-modules{
+    background-color: rgb(200, 130, 105);
+    padding: 7px;
+}
+
+.react-description{
+    background-color: rgb(118, 102, 133);
+    padding: 7px;
+}
+
+.html-vs-jsx{
+    background-color: cadetblue;
+    padding: 7px;
+}
+
+.component{
+    background-color: rgb(178, 94, 94);
+    padding: 7px;
+}
+
+
+.hook{
+    background-color: rgb(243, 200, 145);
+    padding: 7px;
+}
+
+.useState{
+    background-color: rgb(128, 200, 176);
+    padding: 7px;
+}
+
+.props{
+    background-color: rgb(229, 162, 39);
+    padding: 7px;
+}
+
+.netlify{
+    background-color: rgb(141, 194, 151);
+    padding: 7px;
+}
+
+
+
+.make-a-react-app{
+    background-color: rgb(130, 130, 160);
+    padding: 7px;
+}
+
+
+
+
+
+
+
+
